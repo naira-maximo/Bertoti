@@ -16,6 +16,15 @@ Algumas perguntas refletidas na Engenharia de Software:
 
 As linguagens de programação não precisam obedecer a uma hierarquia. Cada necessidade ou preferência do programador interfere na escolha. Precisa avaliar para que uma linguagem tem melhor desempenho, as características principais e a aplicabilidade na demanda em questão.
 
+Trade-offs:
+
+Uma escolha planejada de perder alguma funcionalidade ou recurso possibilitando ganhar outros fatores que sejam mais viaveis para o projeto/aplicação em questão. 
+Exemplo: por mais que a linguagem Java seja mais "complicada" comparada a outras linguagens de alto nível (perde), a portabilidade foi viabilizada, pois é compatível em vários sistemas e dispositivos (JVM)
+
+*******
+
+Requisito: Aquilo que o cliente solicita
+
 
 
 
