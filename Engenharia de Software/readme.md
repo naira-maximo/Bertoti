@@ -40,6 +40,27 @@ Em um exemplo dado em sala de aula, o requisito não funcional de portabilidade 
 
 Outro exemplo descrito em sala foi a utilização do Mongo em uma empresa, escolhido pela sua rapidez no lançamento de dados e na "contrução" do banco com estruturas flexíveis. Ao invés de utilizar um Banco de Dados relacional, com complexidade de dados e estruturas e ser mais leve em termos de memória RAM, nesse Trade-off foi priorizada a praticidade do Mongo, mesmo que a escolha não fosse sustentável e a ampliação de dados da empresa ao longo do tempo acabasse por tornar o Mongo incompatível para as necessidades. 
 
+*******
+
+## Atividade 3
+
+> Avaliar os tipos de arquitetura presentes nos slides 24 - 29 e dar 1 exemplo de situação em que isso pode ser aplicado, dando uma breve explicação.
+
+Architecture: https://docs.google.com/presentation/d/1Lmad2CS1pM1UycQpYn6FiDm2NsEO6CVSchym65tuk4U/edit?usp=drivesdk
+
+![Layered Architecture Style](https://github.com/naira-maximo/bertoti/assets/111442399/edf6a706-1327-4836-ac12-f8d8979a170c)
+
+Estilo de arquitetura em camadas:
+
+Aplicações Web Simples: Muitas aplicações web utilizam o estilo de arquitetura em camadas para separar a lógica de apresentação, a lógica de negócios e o acesso aos dados. Por exemplo, uma aplicação web pode ter uma camada de apresentação (frontend) que lida com a interface do usuário e a interação do usuário, uma camada de negócios (backend) que contém a lógica de processamento e uma camada de acesso a dados que interage com o banco de dados. É um tipo simples de arquitetura, mas que acaba sendo cara na sua manutenção, pela sua baixa tolerância a falhas e baixa modularidade. Reparos que poderiam ser pequenos ou feitos em uma parte isolada da aplicação, precisam envolver toda a camada, o que gera custos altos.
+
+![Pipeline Architecture Style](https://github.com/naira-maximo/bertoti/assets/111442399/a482f23d-2675-41e3-8bf0-a0ec155d1fce)
+
+Estilo de arquitetura de tubulação:
+
+Compiladores: Esse estilo de arquitetura é comumente utilizado em uma variedade de sistemas onde há um fluxo contínuo de dados que precisa ser processado em etapas sequenciais. Os compiladores geralmente seguem uma arquitetura de pipeline, onde o código-fonte é processado em várias etapas, como análise léxica, análise sintática, análise semântica, geração de código intermediário e otimização, antes de finalmente gerar o código de máquina. Cada etapa do processo pode ser implementada como uma etapa separada no pipeline, onde os dados (o código-fonte) fluem de uma etapa para a próxima.
+
+
 
 
 
