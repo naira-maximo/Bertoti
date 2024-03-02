@@ -60,6 +60,26 @@ Estilo de arquitetura de tubulação:
 
 Compiladores: Esse estilo de arquitetura é comumente utilizado em uma variedade de sistemas onde há um fluxo contínuo de dados que precisa ser processado em etapas sequenciais. Os compiladores geralmente seguem uma arquitetura de pipeline, onde o código-fonte é processado em várias etapas, como análise léxica, análise sintática, análise semântica, geração de código intermediário e otimização, antes de finalmente gerar o código de máquina. Cada etapa do processo pode ser implementada como uma etapa separada no pipeline, onde os dados (o código-fonte) fluem de uma etapa para a próxima.
 
+![Microkernel Architecture Style](https://github.com/naira-maximo/bertoti/assets/111442399/d6b193b3-3f1e-4701-bf33-b6919fd953a9)
+
+Estilo de arquitetura de microkernel:
+
+Sistemas de Comunicação: O estilo de arquitetura de microkernel é um padrão arquitetural onde o núcleo mínimo do sistema, conhecido como microkernel, fornece apenas as funcionalidades básicas, enquanto serviços adicionais são implementados como processos separados, conhecidos como servidores, que se comunicam com o microkernel. Em sistemas de comunicação, como sistemas de telecomunicações ou redes de computadores, a arquitetura de microkernel pode ser usada para separar as funcionalidades de baixo nível, como gerenciamento de pacotes e controle de fluxo, das funcionalidades de alto nível, como roteamento e gerenciamento de sessões. Em geral, esse estilo de arquitetura é útil em sistemas onde a modularidade, a extensibilidade e a eficiência são importantes, permitindo que diferentes partes do sistema evoluam de forma independente.
+
+![Service-Based Architecture Style](https://github.com/naira-maximo/bertoti/assets/111442399/16811e21-a188-4ca2-aefb-8c848ca6b949)
+
+Estilo de arquitetura baseada em serviços:
+
+E-commerce: Um sistema de e-commerce pode adotar uma arquitetura SOA (Service-Oriented Architecture) para dividir suas funcionalidades em serviços independentes, como gerenciamento de inventário, processamento de pedidos, pagamento, envio, etc. Isso permite que diferentes partes do sistema sejam escaladas e atualizadas independentemente umas das outras.
+
+Serviços bancários online: Bancos podem adotar uma arquitetura baseada em serviços para fornecer funcionalidades como verificação de saldo, transferências de fundos, pagamento de contas, entre outros, como serviços independentes. Isso facilita a integração com diferentes canais de acesso, como aplicativos móveis e sites.
+
+Governo eletrônico: Governos podem adotar uma arquitetura baseada em serviços para disponibilizar serviços online aos cidadãos, como emissão de documentos, pagamento de impostos, agendamento de consultas, entre outros. Isso pode facilitar o acesso dos cidadãos aos serviços governamentais e melhorar a eficiência administrativa.
+
+Aplicações de mídia social: Plataformas de mídia social podem utilizar uma arquitetura baseada em serviços para separar funcionalidades como gerenciamento de perfil, feeds de notícias, mensagens, etc. Isso pode facilitar a escalabilidade da plataforma e permitir o desenvolvimento de novos recursos de forma mais rápida.
+
+
+
 
 
 
