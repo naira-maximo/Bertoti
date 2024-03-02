@@ -50,25 +50,25 @@ Architecture: https://docs.google.com/presentation/d/1Lmad2CS1pM1UycQpYn6FiDm2Ns
 
 ![Layered Architecture Style](https://github.com/naira-maximo/bertoti/assets/111442399/edf6a706-1327-4836-ac12-f8d8979a170c)
 
-Estilo de arquitetura em camadas:
+### Estilo de arquitetura em camadas:
 
 Aplicações Web Simples: Muitas aplicações web utilizam o estilo de arquitetura em camadas para separar a lógica de apresentação, a lógica de negócios e o acesso aos dados. Por exemplo, uma aplicação web pode ter uma camada de apresentação (frontend) que lida com a interface do usuário e a interação do usuário, uma camada de negócios (backend) que contém a lógica de processamento e uma camada de acesso a dados que interage com o banco de dados. É um tipo simples de arquitetura, mas que acaba sendo cara na sua manutenção, pela sua baixa tolerância a falhas e baixa modularidade. Reparos que poderiam ser pequenos ou feitos em uma parte isolada da aplicação, precisam envolver toda a camada, o que gera custos altos.
 
 ![Pipeline Architecture Style](https://github.com/naira-maximo/bertoti/assets/111442399/a482f23d-2675-41e3-8bf0-a0ec155d1fce)
 
-Estilo de arquitetura de tubulação:
+### Estilo de arquitetura de tubulação:
 
 Compiladores: Esse estilo de arquitetura é comumente utilizado em uma variedade de sistemas onde há um fluxo contínuo de dados que precisa ser processado em etapas sequenciais. Os compiladores geralmente seguem uma arquitetura de pipeline, onde o código-fonte é processado em várias etapas, como análise léxica, análise sintática, análise semântica, geração de código intermediário e otimização, antes de finalmente gerar o código de máquina. Cada etapa do processo pode ser implementada como uma etapa separada no pipeline, onde os dados (o código-fonte) fluem de uma etapa para a próxima.
 
 ![Microkernel Architecture Style](https://github.com/naira-maximo/bertoti/assets/111442399/d6b193b3-3f1e-4701-bf33-b6919fd953a9)
 
-Estilo de arquitetura de microkernel:
+### Estilo de arquitetura de microkernel:
 
 Sistemas de Comunicação: O estilo de arquitetura de microkernel é um padrão arquitetural onde o núcleo mínimo do sistema, conhecido como microkernel, fornece apenas as funcionalidades básicas, enquanto serviços adicionais são implementados como processos separados, conhecidos como servidores, que se comunicam com o microkernel. Em sistemas de comunicação, como sistemas de telecomunicações ou redes de computadores, a arquitetura de microkernel pode ser usada para separar as funcionalidades de baixo nível, como gerenciamento de pacotes e controle de fluxo, das funcionalidades de alto nível, como roteamento e gerenciamento de sessões. Em geral, esse estilo de arquitetura é útil em sistemas onde a modularidade, a extensibilidade e a eficiência são importantes, permitindo que diferentes partes do sistema evoluam de forma independente.
 
 ![Service-Based Architecture Style](https://github.com/naira-maximo/bertoti/assets/111442399/16811e21-a188-4ca2-aefb-8c848ca6b949)
 
-Estilo de arquitetura baseada em serviços:
+### Estilo de arquitetura baseada em serviços:
 
 E-commerce: Um sistema de e-commerce pode adotar uma arquitetura SOA (Service-Oriented Architecture) para dividir suas funcionalidades em serviços independentes, como gerenciamento de inventário, processamento de pedidos, pagamento, envio, etc. Isso permite que diferentes partes do sistema sejam escaladas e atualizadas independentemente umas das outras.
 
@@ -78,7 +78,25 @@ Governo eletrônico: Governos podem adotar uma arquitetura baseada em serviços 
 
 Aplicações de mídia social: Plataformas de mídia social podem utilizar uma arquitetura baseada em serviços para separar funcionalidades como gerenciamento de perfil, feeds de notícias, mensagens, etc. Isso pode facilitar a escalabilidade da plataforma e permitir o desenvolvimento de novos recursos de forma mais rápida.
 
+![Event-Driven Architecture Style](https://github.com/naira-maximo/bertoti/assets/111442399/c10f8e2e-65d1-4040-91cd-8362059f2bc6)
 
+### Estilo de arquitetura orientada a eventos
+
+Processamento de streaming de dados: Empresas que lidam com grandes volumes de dados em tempo real, como empresas de mídia, podem utilizar EDA (Event-Driven Architecture) para processar fluxos de dados contínuos, como transmissões de vídeo ao vivo, feeds de redes sociais, transações financeiras, etc. Os eventos são processados conforme chegam, permitindo análises em tempo real e tomada de decisões em tempo hábil. A arquitetura orientada a eventos pode ser aplicada em diferentes setores para lidar com a complexidade e a escalabilidade de sistemas distribuídos e em tempo real.
+
+Sistemas de logística e transporte: Empresas de logística podem utilizar EDA para rastrear eventos relacionados ao transporte de mercadorias, como atualizações de localização de remessas, alterações de status de entrega, problemas de rota, etc. Os eventos são processados para manter os clientes informados sobre o status de suas remessas e para otimizar operações logísticas.
+
+![Microservices Architecture](https://github.com/naira-maximo/bertoti/assets/111442399/4592eac7-4c49-4ef9-9c26-f8fae89cd34b)
+
+### Arquitetura de microsserviços
+
+Netflix: A plataforma de streaming Netflix adota uma arquitetura de microsserviços para sua infraestrutura. Cada funcionalidade, como recomendações de filmes, gerenciamento de usuários, reprodução de vídeo, etc., é encapsulada em um microsserviço independente. Isso permite escalabilidade independente de cada parte do sistema, além de facilitar a implantação contínua e a manutenção.
+
+Uber: O aplicativo Uber utiliza uma arquitetura de microsserviços para lidar com diferentes aspectos do serviço, como gerenciamento de motoristas, rastreamento de veículos, processamento de pagamentos, etc. Cada funcionalidade é fornecida por um microsserviço separado, o que permite escalabilidade e manutenção mais fáceis.
+
+Amazon: A Amazon adota uma arquitetura de microsserviços em muitos de seus serviços, incluindo o Amazon Web Services (AWS). Cada serviço, como armazenamento em nuvem, computação, banco de dados, etc., é fornecido como um microsserviço separado, permitindo que os clientes usem e dimensionem apenas os serviços de que precisam.
+
+Spotify: O serviço de streaming de música Spotify adota uma arquitetura de microsserviços para lidar com diferentes aspectos do serviço, como busca de músicas, reprodução de músicas, gerenciamento de playlists, etc. Isso permite escalabilidade independente de cada parte do sistema e facilita a implantação contínua de novos recursos.
 
 
 
