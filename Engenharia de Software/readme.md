@@ -52,9 +52,9 @@ Architecture: https://docs.google.com/presentation/d/1Lmad2CS1pM1UycQpYn6FiDm2Ns
 
 ### Estilo de arquitetura em camadas:
 
-Simplicity: ⭐⭐⭐⭐⭐ Overall Cost: ⭐⭐⭐⭐⭐
+Simplicity: ⭐⭐⭐⭐⭐ Scalability: ⭐
 
-Aplicações Web Simples: Muitas aplicações web utilizam o estilo de arquitetura em camadas para separar a lógica de apresentação, a lógica de negócios e o acesso aos dados. Por exemplo, uma aplicação web pode ter uma camada de apresentação (frontend) que lida com a interface do usuário e a interação do usuário, uma camada de negócios (backend) que contém a lógica de processamento e uma camada de acesso a dados que interage com o banco de dados. É um tipo simples de arquitetura, mas que acaba sendo cara na sua manutenção, pela sua baixa tolerância a falhas e baixa modularidade. Reparos que poderiam ser pequenos ou feitos em uma parte isolada da aplicação, precisam envolver toda a camada, o que gera custos altos.
+Aplicações Web Simples: Muitas aplicações web utilizam o estilo de arquitetura em camadas para separar a lógica de apresentação, a lógica de negócios e o acesso aos dados. Por exemplo, uma aplicação web pode ter uma camada de apresentação (frontend) que lida com a interface do usuário e a interação do usuário, uma camada de negócios (backend) que contém a lógica de processamento e uma camada de acesso a dados que interage com o banco de dados. É um tipo simples de arquitetura, mas que acaba sendo pouco escalável pela sua baixa tolerância a falhas e baixa modularidade. Aumentos de carga, que não são feitos em uma parte isolada da aplicação, precisam envolver toda a camada, o que gera sobrecarga.
 
 ![Pipeline Architecture Style](https://github.com/naira-maximo/bertoti/assets/111442399/a482f23d-2675-41e3-8bf0-a0ec155d1fce)
 
