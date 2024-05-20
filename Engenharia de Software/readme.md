@@ -114,6 +114,18 @@ Spotify: O serviço de streaming de música Spotify adota uma arquitetura de mic
 
 Gerenciar um grande número de microsserviços pode se tornar complicado devido à necessidade de lidar com questões como descoberta de serviços, comunicação entre microsserviços, monitoramento, balanceamento de carga, resiliência, tratamento de falhas e segurança. Além disso, a dependência entre os microsserviços pode introduzir complexidades adicionais na orquestração e coordenação das interações entre os serviços.
 
+## Atividade 4
+
+> Definir uma arquitetura para a aplicação, debatendo tradeoffs com os requisitos não funcionais comentados em aula.
+
+  Para a minha aplicação simples, de empresa de cotação de produtos,  escolhi o estilo de arquitetura em camadas por poder conter uma camada de apresentação (frontend), camada de negócios (backend) e o banco de dados. A escolha foi feita pois essa arquitetura permite clara separação de responsabilidades. Para o meu aprendizado, é de grande valia esse recurso, pois cada camada pode ser desenvolvida, testada e modificada de forma independente. Embora apresente certa regidez, dificultando a adaptação a novos requisitos ou mudanças significativas no sistema, a aplicação não seria usada para grande fluxo de produtos e clientes, fazendo com que a escabilidade também não seja um recurso essencial. 
+ 
+## Atividade 5
+
+> Iniciar o diagrama de classes de uma das partes da arquitetura
+
+[Classes UML (Diagrama de Classes)](https://lucid.app/lucidchart/dd0473f1-03f0-4667-9a66-9c1aef3ea831/edit?beaconFlowId=79C40DBBAB28C098&invitationId=inv_7eb5120e-a016-4cfa-910b-d09a336a7380&page=HWEp-vi-RSFO# "Sistema de Cotação de Produtos Químicos")
+
 
 
 
