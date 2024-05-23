@@ -125,10 +125,3 @@ Gerenciar um grande número de microsserviços pode se tornar complicado devido 
 > Iniciar o diagrama de classes de uma das partes da arquitetura
 
 [Classes UML (Diagrama de Classes)](https://lucid.app/lucidchart/dd0473f1-03f0-4667-9a66-9c1aef3ea831/edit?beaconFlowId=79C40DBBAB28C098&invitationId=inv_7eb5120e-a016-4cfa-910b-d09a336a7380&page=HWEp-vi-RSFO# "Sistema de Cotação de Produtos Químicos")
-
-
-
-
-
-
-
