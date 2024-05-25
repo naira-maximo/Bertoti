@@ -22,7 +22,7 @@ As linguagens de programação não precisam obedecer a uma hierarquia. Cada nec
 
 Trade-offs:
 
-Uma escolha, planejadas a longo prazo ou não, de perder alguma funcionalidade ou recurso possibilitando ganhar outros fatores que sejam mais viáveis para o projeto/aplicação em questão. 
+Uma escolha, planejadas a longo prazo ou não, de perder algum requisito não funcional (qualidade) ou recurso possibilitando ganhar outros fatores que sejam mais viáveis para o projeto/aplicação em questão. 
 Exemplo: por mais que a linguagem Java seja mais "complicada" comparada a outras linguagens de alto nível (perde), a portabilidade foi viabilizada, pois é compatível em vários sistemas e dispositivos (JVM).
 
 *******
