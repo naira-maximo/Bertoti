@@ -126,6 +126,11 @@ Gerenciar um grande número de microsserviços pode se tornar complicado devido 
 
 [Classes UML (Diagrama de Classes)](https://lucid.app/lucidchart/dd0473f1-03f0-4667-9a66-9c1aef3ea831/edit?beaconFlowId=79C40DBBAB28C098&invitationId=inv_7eb5120e-a016-4cfa-910b-d09a336a7380&page=HWEp-vi-RSFO# "Sistema de Cotação de Produtos Químicos")
 
+## Atividade 8
+
+> Criar um Diagrama de Casos de Uso
+
+![image](https://github.com/naira-maximo/naira-maximo/assets/111442399/834c39df-4bbe-4504-85d3-e443f4f7b18e)
 
 
 
