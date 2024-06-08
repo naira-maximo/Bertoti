@@ -130,7 +130,7 @@ Gerenciar um grande número de microsserviços pode se tornar complicado devido 
 
 > Criar um Diagrama de Casos de Uso
 
-![image](https://github.com/naira-maximo/naira-maximo/assets/111442399/834c39df-4bbe-4504-85d3-e443f4f7b18e)
+![image](https://github.com/naira-maximo/Bertoti/assets/111442399/9c5d5d0b-b6d9-47de-b853-ef3164681f7c)
 
 
 
