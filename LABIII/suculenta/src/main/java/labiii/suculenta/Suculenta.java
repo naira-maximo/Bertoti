@@ -3,22 +3,22 @@ package labiii.suculenta;
 import java.util.UUID;
 
 public class Suculenta {
-    private final String id;
+    private int id;
     private String nome;
     private String familia;
 
-    public Suculenta(String id, String nome, String familia) {
+    public Suculenta(int id, String nome, String familia) {
         this.id = id;
         this.nome = nome;
         this.familia = familia;
     }
 
-    public Suculenta(String nome, String familia) {
-        this(UUID.randomUUID().toString(), nome, familia);
+    public int getId() {
+        return id;
     }
 
-    public String getId() {
-        return id;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getNome() {

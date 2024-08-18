@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 import java.util.Optional;
 
 @SpringBootApplication
@@ -22,13 +23,14 @@ public class SuculentaApplication {
 @RequestMapping("/suculentas")
 class RestApiDemoController {
 	private final List<Suculenta> suculentas = new ArrayList<>();
+	private int idAtual = 1;
 
 	public RestApiDemoController() {
 		suculentas.addAll(List.of(
-				new Suculenta("Echeveria", "Crassulaceae"),
-				new Suculenta("Sedum", "Crassulaceae"),
-				new Suculenta("Haworthia", "Asphodelaceae"),
-				new Suculenta("Aloe Vera", "Asphodelaceae")
+				new Suculenta(idAtual++,"Echeveria", "Crassulaceae"),
+				new Suculenta(idAtual++,"Sedum", "Crassulaceae"),
+				new Suculenta(idAtual++,"Haworthia", "Asphodelaceae"),
+				new Suculenta(idAtual++,"Aloe Vera", "Asphodelaceae")
 		));
 	}
 
@@ -38,29 +40,26 @@ class RestApiDemoController {
 	}
 
 	@GetMapping("/{id}")
-	Optional<Suculenta> getSuculentaById(@PathVariable String id) {
-		for (Suculenta s: suculentas) {
-			if (s.getId().equals(id)) {
-				return Optional.of(s);
-			}
-		}
-		return Optional.empty();
+	Optional<Suculenta> getSuculentaById(@PathVariable int id) {
+		return suculentas.stream().filter(s -> Objects.equals(s.getId(), id)).findFirst();
 	}
 
 	@PostMapping
 	Suculenta postSuculenta(@RequestBody Suculenta suculenta) {
+		suculenta.setId(idAtual++); // Atribui um novo ID autoincrementado
 		suculentas.add(suculenta);
 		return suculenta;
 	}
 
 	@PutMapping("/{id}")
-	ResponseEntity<Suculenta> putSuculenta(@PathVariable String id,
+	ResponseEntity<Suculenta> putSuculenta(@PathVariable int id,
 										   @RequestBody Suculenta suculenta) {
 		int suculentaIndex = -1;
 
 		for (Suculenta s: suculentas) {
-			if (s.getId().equals(id)) {
+			if (Objects.equals(s.getId(), id)) {
 				suculentaIndex = suculentas.indexOf(s);
+				suculenta.setId(id);
 				suculentas.set(suculentaIndex, suculenta);
 			}
 		}
@@ -71,7 +70,7 @@ class RestApiDemoController {
 	}
 
 	@DeleteMapping("/{id}")
-	void deleteSuculenta(@PathVariable String id) {
-		suculentas.removeIf(s -> s.getId().equals(id));
+	void deleteSuculenta(@PathVariable int id) {
+		suculentas.removeIf(s -> Objects.equals(s.getId(), id));
 	}
 }
