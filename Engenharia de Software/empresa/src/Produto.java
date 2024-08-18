@@ -16,14 +16,11 @@ public class Produto {
 
     // Métodos de acesso
     public int getCodigo() {return codigo;}
-
     public void setCodigo(int codigo) {this.codigo = codigo;}
-
     public String getNome() {return nome;}
-
     public void setNome(String nome) {this.nome = nome;}
-
     public double getPrecoUnitario() {return precoUnitario;}
+    public void setPrecoUnitario(double precoUnitario) {this.precoUnitario = precoUnitario;}
     public int getQuantidadeEstoque() {return quantidadeEstoque;}
     public void setQuantidadeEstoque(int quantidadeEstoque) {this.quantidadeEstoque = quantidadeEstoque;}
 }
