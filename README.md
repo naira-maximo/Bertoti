@@ -125,3 +125,9 @@ Gerenciar um grande número de microsserviços pode se tornar complicado devido 
 > Iniciar o diagrama de classes de uma das partes da arquitetura
 
 [Classes UML (Diagrama de Classes)](https://lucid.app/lucidchart/dd0473f1-03f0-4667-9a66-9c1aef3ea831/edit?beaconFlowId=79C40DBBAB28C098&invitationId=inv_7eb5120e-a016-4cfa-910b-d09a336a7380&page=HWEp-vi-RSFO# "Sistema de Cotação de Produtos Químicos")
+
+## Atividade 8
+
+> Criar um Diagrama de Casos de Uso
+
+![image](https://github.com/naira-maximo/Bertoti/assets/111442399/9c5d5d0b-b6d9-47de-b853-ef3164681f7c)
