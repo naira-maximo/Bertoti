@@ -1,7 +1,5 @@
 package labiii.suculenta;
 
-import java.util.UUID;
-
 public class Suculenta {
     private int id;
     private String nome;
