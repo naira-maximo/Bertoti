@@ -1,4 +1,4 @@
-package labiii.suculenta;
+package labiii.suculenta.controller;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,6 +15,8 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import labiii.suculenta.model.Suculenta;
 
 @RestController
 @RequestMapping("/suculentas")

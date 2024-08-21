@@ -1,4 +1,4 @@
-package labiii.suculenta;
+package labiii.suculenta.model;
 
 public class Suculenta {
     private int id;
