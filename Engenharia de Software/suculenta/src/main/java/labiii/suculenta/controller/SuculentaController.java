@@ -29,13 +29,7 @@ public class SuculentaController {
                     new Suculenta(idAtual++,"Echeveria", "Crassulaceae"),
                     new Suculenta(idAtual++,"Sedum", "Crassulaceae"),
                     new Suculenta(idAtual++,"Haworthia", "Asphodelaceae"),
-                    new Suculenta(idAtual++,"Aloe Vera", "Asphodelaceae"),
-                    new Suculenta(idAtual++, "Sempervivum", "Crassulaceae"),
-                    new Suculenta(idAtual++, "Agave", "Asparagaceae"),
-                    new Suculenta(idAtual++, "Crassula Ovata", "Crassulaceae"),
-                    new Suculenta(idAtual++, "Graptopetalum", "Crassulaceae"),
-                    new Suculenta(idAtual++, "Kalanchoe", "Crassulaceae"),
-                    new Suculenta(idAtual++, "Euphorbia", "Euphorbiaceae")
+                    new Suculenta(idAtual++,"Aloe Vera", "Asphodelaceae")
             ));
         }
 

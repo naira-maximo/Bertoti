@@ -16,20 +16,13 @@
         <!-- A tabela será carregada aqui -->
     </div>
 
-    <h2>Cadastrar Nova Suculenta</h2>
-    <form id="form-cadastro">
-        <input type="text" id="nome" placeholder="Nome" required>
-        <input type="text" id="familia" placeholder="Família" required>
-        <button type="submit">Cadastrar</button>
-    </form>
-
     <script id="template" type="text/x-handlebars-template">
         <table border=".5">
             <thead>
                 <tr>
                     <th>ID</th>
                     <th>Nome</th>
-                    <th>Família</th>
+                    <th>Espécie</th>
                 </tr>
             </thead>
             <tbody>
@@ -37,7 +30,7 @@
                 <tr>
                     <td>{{id}}</td>
                     <td>{{nome}}</td>
-                    <td>{{familia}}</td>
+                    <td>{{especie}}</td>
                 </tr>
                 {{/each}}
             </tbody>
