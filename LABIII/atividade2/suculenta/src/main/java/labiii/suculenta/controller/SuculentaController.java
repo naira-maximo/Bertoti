@@ -28,13 +28,13 @@ public class SuculentaController {
                 new Suculenta(0, "Echeveria", "Crassulaceae"),
                 new Suculenta(0, "Sedum", "Crassulaceae"),
                 new Suculenta(0, "Haworthia", "Asphodelaceae"),
-                new Suculenta(0, "Aloe Vera", "Asphodelaceae"),
-                new Suculenta(0, "Sempervivum", "Crassulaceae"),
-                new Suculenta(0, "Agave", "Asparagaceae"),
-                new Suculenta(0, "Crassula Ovata", "Crassulaceae"),
-                new Suculenta(0, "Graptopetalum", "Crassulaceae"),
-                new Suculenta(0, "Kalanchoe", "Crassulaceae"),
-                new Suculenta(0, "Euphorbia", "Euphorbiaceae")
+                new Suculenta(0, "Aloe Vera", "Asphodelaceae")
+                // new Suculenta(0, "Sempervivum", "Crassulaceae"),
+                // new Suculenta(0, "Agave", "Asparagaceae"),
+                // new Suculenta(0, "Crassula Ovata", "Crassulaceae"),
+                // new Suculenta(0, "Graptopetalum", "Crassulaceae"),
+                // new Suculenta(0, "Kalanchoe", "Crassulaceae"),
+                // new Suculenta(0, "Euphorbia", "Euphorbiaceae")
         ));
         // Atribuir IDs após a lista ser preenchida
         for (Suculenta suculenta : suculentas) {
