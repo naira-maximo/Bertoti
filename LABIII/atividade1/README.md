@@ -1,9 +1,11 @@
-REST Spring Boot com o seu exemplo (baseado no que passei) e testes com postman (coloque os prints do postman no readme além do código que estará no formato exportado do eclipse ou intellij)
+# Atividade 1
+
+## REST SPRING BOOT - SUCULENTAS
 
 
 ![controller](https://github.com/user-attachments/assets/1b5fd620-c6ce-43f3-ad82-bdadef1a8b8d)
 
-Testes com Thunder Client
+## Testes com Thunder Client
 
 ![get](https://github.com/user-attachments/assets/607c94aa-62f4-413e-a08c-d62655f9d1e0)
 
