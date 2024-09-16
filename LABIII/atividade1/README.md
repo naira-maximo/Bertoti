@@ -8,7 +8,6 @@ Este projeto é uma API REST construída com Spring Boot para gerenciar suculent
 
 - **Java**: Linguagem de programação utilizada.
 - **Spring Boot**: Framework usado para construir a API REST.
-- **HTMX e Handlebars.js**: Ferramentas utilizadas no frontend para interação dinâmica com a API.
 - **Thunder Client**: Extensão do VS Code utilizada para testar a API.
 
 ## Endpoints da API
