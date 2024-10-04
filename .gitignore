@@ -35,5 +35,12 @@ target/
 # Ignore Maven wrapper files
 !.mvn/wrapper/maven-wrapper.jar
 
-# Ignore all files except src directories
-!**/src/
+.plugins/
+.lock
+.log
+version.IntelliJ
+.idea
+.vscode/
+.metadata/
+.mvn/
+.mvn

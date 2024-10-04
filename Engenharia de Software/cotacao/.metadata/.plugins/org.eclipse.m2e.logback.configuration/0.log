@@ -672,3 +672,4 @@
 2024-08-24 13:28:10,058 [Worker-27: Launching SburRestDemoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2024-08-24 13:28:10,059 [Worker-27: Launching SburRestDemoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
 2024-08-24 13:28:10,059 [Worker-27: Launching SburRestDemoApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\naira\Downloads\SpringBootUpAndRunning-chapter3end\SpringBootUpAndRunning-chapter3end\java\sbur-rest-demo\src\test\resources
+2024-09-16 01:47:16,826 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
