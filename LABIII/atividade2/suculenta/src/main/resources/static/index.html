@@ -7,20 +7,20 @@
     <title>Exemplo com htmx</title>
     <script src="https://unpkg.com/htmx.org@1.7.0"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
-    <script src="js/script.js"></script>
 </head>
 <body>
     <h1>Lista de Suculentas</h1>
-    <button>Carregar Tabela</button>
+    <button id="load-table">Carregar Tabela</button>
     <div id="tabela">
         <!-- A tabela será carregada aqui -->
     </div>
 
-    <h2>Cadastrar Nova Suculenta</h2>
+    <h2>Cadastrar/Editar Suculenta</h2>
     <form id="form-cadastro">
-        <input type="text" id="nome" placeholder="Nome" required>
-        <input type="text" id="familia" placeholder="Família" required>
-        <button type="submit">Cadastrar</button>
+        <input type="hidden" id="id" name="id">
+        <input type="text" id="nome" name="nome" placeholder="Nome" required>
+        <input type="text" id="familia" name="familia" placeholder="Família" required>
+        <button type="submit">Salvar</button>
     </form>
 
     <script id="template" type="text/x-handlebars-template">
@@ -30,6 +30,7 @@
                     <th>ID</th>
                     <th>Nome</th>
                     <th>Família</th>
+                    <th>Ações</th>
                 </tr>
             </thead>
             <tbody>
@@ -38,10 +39,105 @@
                     <td>{{id}}</td>
                     <td>{{nome}}</td>
                     <td>{{familia}}</td>
+                    <td>
+                        <button class="edit" data-id="{{id}}">Editar</button>
+                        <button class="delete" data-id="{{id}}">Deletar</button>
+                    </td>
                 </tr>
                 {{/each}}
             </tbody>
         </table>
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('form-cadastro');
+            const tabela = document.getElementById('tabela');
+            const templateSource = document.getElementById('template').innerHTML;
+            const template = Handlebars.compile(templateSource);
+
+            document.getElementById('load-table').addEventListener('click', loadTable);
+
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();
+                const id = form.id.value;
+                const nome = form.nome.value;
+                const familia = form.familia.value;
+
+                if (id) {
+                    updateSuculenta(id, nome, familia);
+                } else {
+                    createSuculenta(nome, familia);
+                }
+            });
+
+            tabela.addEventListener('click', function(event) {
+                if (event.target.classList.contains('edit')) {
+                    const id = event.target.dataset.id;
+                    editSuculenta(id);
+                } else if (event.target.classList.contains('delete')) {
+                    const id = event.target.dataset.id;
+                    deleteSuculenta(id);
+                }
+            });
+
+            function loadTable() {
+                fetch('/suculentas')
+                    .then(response => response.json())
+                    .then(data => {
+                        tabela.innerHTML = template({ dados: data });
+                    });
+            }
+
+            function createSuculenta(nome, familia) {
+                fetch('/suculentas', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ nome, familia })
+                }).then(response => response.json())
+                .then(() => {
+                    form.reset();
+                    loadTable();
+                });
+            }
+
+            function editSuculenta(id) {
+                fetch(`/suculentas/${id}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        form.id.value = data.id;
+                        form.nome.value = data.nome;
+                        form.familia.value = data.familia;
+                    });
+            }
+
+            function updateSuculenta(id, nome, familia) {
+                fetch(`/suculentas/${id}`, {
+                    method: 'PUT',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ nome, familia })
+                }).then(response => response.json())
+                .then(() => {
+                    form.reset();
+                    loadTable();
+                });
+            }
+
+            function deleteSuculenta(id) {
+                fetch(`/suculentas/${id}`, {
+                    method: 'DELETE'
+                }).then(() => {
+                    loadTable();
+                });
+            }
+
+            // Carrega a tabela inicialmente
+            loadTable();
+        });
     </script>
 </body>
 </html>
